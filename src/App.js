@@ -37,14 +37,14 @@ function App() {
         </div>
         {messageVisible && <div>You will receive emails on updates of the company!</div>}
       </div>
-      <div className='emails-display'>
+      {/* <div className='emails-display'>
         <h4>Registered Emails:</h4>
         <ul>
           {emailsList.map((email, index) => (
             <li key={index}>{email}</li>
           ))}
         </ul>
-      </div>
+      </div> */}
       <div className='picture'>
         <img src={ui} alt='Community Cover'/>
       </div>
