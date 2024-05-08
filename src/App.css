@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+html {
+  background-color: #000000;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: space-between; /* Changed from 'center' to 'space-between' */
+  align-items: center;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.titleAndBio {
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+.title {
+  font-size: xxx-large;
+  font-family: 'Poppins', 'Comic Sans';
+}
+
+.bio {
+  color: whitesmoke;
+  font-size: x-large;
+}
+
+.picture {
+}
+
+img {
+  max-width: 1000px;
+  max-height: 1200px;
+}
+
+.button {
+  margin-top: 90%;
+}
+
+.modern-button {
+  font-family: 'Poppins', sans-serif; /* Using Poppins font */
+  font-size: 18px; /* Set the font size */
+  padding: 10px 20px; /* Padding inside the button */
+  background-color: #0c8f88; /* A fresh, vibrant green background */
+  color: white; /* White text color */
+  border: none; /* No border for a modern look */
+  border-radius: 15px; /* Slightly rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.modern-button:hover, .modern-button:focus {
+  background-color: #08615c; /* Darker shade of button color on hover/focus */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Larger shadow for lifted effect on hover */
+}
+
+.button input {
+  font-family: 'Poppins', sans-serif; /* Consistent font family */
+  font-size: 18px; /* Matching font size */
+  padding: 10px 20px; /* Consistent padding */
+  background-color: #0c8f88; /* Same background color */
+  color: rgb(51, 51, 51); /* Text color */
+  border: none; /* No border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+  outline: none; /* Remove focus outline */
+  width: 100%; /* Make the input wider by setting width to 100% of its container */
+  margin-right: 10px; /* Right margin to space it from the button, adjust or remove as necessary */
+  margin-bottom: 10px; /* Bottom margin when stacked vertically */
+}
+::placeholder {
+  font-size: 18px; /* Matching font size */
+  color: rgb(51, 51, 51); /* Text color */
+  opacity: 1; /* Firefox */
+}
+
+.button input:focus {
+  background-color: #98d2cf; /* Darker background on focus, matching button hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Larger shadow on focus */
+}
+
+.emails-display {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
